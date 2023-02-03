@@ -2,9 +2,11 @@ import React from "react";
 import { nav } from "../constants";
 import styles from "../style";
 
+
 const Navbar = () => {
   return (
     <div className={`${styles.borderRed} ${styles.flexCenter}`}>
+
       <div id="HamburgerMenu" className="">
         {/* <img src={iconMenu} alt="Hamburger Menu" /> */}
         <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +17,7 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <h1 className="font-">sneakers</h1>
+      <h1 className={`${styles.heading2}`}>sneakers</h1>
 
       <nav className={`${styles.flexCenter} list-none `}>
         {nav.map((nav, index) => (

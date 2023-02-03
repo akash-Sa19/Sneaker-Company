@@ -6,10 +6,10 @@
 
 :root {
   font-family: 'Kumbh Sans', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
 
-  color: black;
+  /* color: black; */
   background-color:  rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
