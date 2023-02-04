@@ -1,7 +1,8 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  heading2: "font-kumbh font-bold text-[45px] leading-[56px] ",
+  heading2: "font-kumbh font-semibold text-[45px] leading-[56px]",
+  navbarText : "font-kumbh font-bold text-[20px] leading-[25px]",
   paragraph:
     "font-kumbh font-normal text-dimWhite text-[18px] leading-[30.8px]",
 

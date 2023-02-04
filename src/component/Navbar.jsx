@@ -1,13 +1,16 @@
 import React from "react";
 import { nav } from "../constants";
 import styles from "../style";
+import {imageAvatar} from '../assets'
+// import {image-avatar}
+
 
 
 const Navbar = () => {
   return (
-    <div className={`${styles.borderRed} ${styles.flexCenter}`}>
+    <div className={`${styles.borderRed} ${styles.flexCenter} lg:w-[1189px] lg:h-[68px]`}>
 
-      <div id="HamburgerMenu" className="">
+      <div id="HamburgerMenu" className={`md:hidden`}>
         {/* <img src={iconMenu} alt="Hamburger Menu" /> */}
         <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -17,15 +20,25 @@ const Navbar = () => {
           />
         </svg>
       </div>
-      <h1 className={`${styles.heading2}`}>sneakers</h1>
 
-      <nav className={`${styles.flexCenter} list-none `}>
-        {nav.map((nav, index) => (
-          <li key={nav.id} className={` `}>
-            {nav.value}
+      <h1 className={`${styles.heading2} mr-[50px]`}>sneakers</h1>
+
+      <nav className={`${styles.flexCenter} list-none ${styles.borderBlue} mr-[350px]`}>
+        {nav.map((navBar, index) => (
+          <li 
+		  key={navBar.id} 
+		  className={`${styles.navbarText}
+		  ${index === nav.length -1 ? "mr-0" : "mr-[26px]" }`}>
+            {navBar.value}
           </li>
         ))}
       </nav>
+
+	  <div>
+		<div>
+			<img src={imageAvatar} alt="" />
+		</div>
+	  </div>
     </div>
   );
 };
