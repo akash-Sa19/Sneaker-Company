@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroComponent from './component/HeroComponent'
 import Navbar from './component/Navbar'
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className=''>
       {/* <p>happy together</p> */}
       <Navbar />
+      <HeroComponent />
     </div>
   )
 }

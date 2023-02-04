@@ -1,44 +1,49 @@
 import React from "react";
 import { nav } from "../constants";
 import styles from "../style";
-import {imageAvatar} from '../assets'
+import iconMenu  from '../assets/iconMenu.svg'
+import imageAvatar from '../assets/imageAvatar.png'
+import iconCart from '../assets/iconCart.svg'
 // import {image-avatar}
 
 
 
 const Navbar = () => {
   return (
-    <div className={`${styles.borderRed} ${styles.flexCenter} lg:w-[1189px] lg:h-[68px]`}>
-
-      <div id="HamburgerMenu" className={`md:hidden`}>
-        {/* <img src={iconMenu} alt="Hamburger Menu" /> */}
-        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
-            fill="#69707D"
-            fillRule="evenodd"
-          />
-        </svg>
+    <div
+      className={`${styles.borderRed} ${styles.flexCenter} lg:w-[1189px] lg:h-[68px] md:w-[747px] md:h-[50px] mt-[28px]`}>
+		{/* HamburgerMenu */}
+      <div id="HamburgerMenu" className={`block lg:hidden md:hidden sm:block`}>
+        <img src={iconMenu} alt="Hamburger Menu" />
       </div>
 
+		{/* div contains Heading and Navbar */}
+	  <div className={`flex flex-row align-baseline `}>
+		{/* Heading */}
       <h1 className={`${styles.heading2} mr-[50px]`}>sneakers</h1>
 
-      <nav className={`${styles.flexCenter} list-none ${styles.borderBlue} mr-[350px]`}>
+		{/* Navbar */}
+      <nav
+        className={`${styles.flexCenter} list-none  mr-[350px]`}>
         {nav.map((navBar, index) => (
-          <li 
-		  key={navBar.id} 
-		  className={`${styles.navbarText}
-		  ${index === nav.length -1 ? "mr-0" : "mr-[26px]" }`}>
+			<li
+            key={navBar.id}
+            className={`${styles.navbarText}
+			${index === nav.length - 1 ? "mr-0" : "mr-[26px]"}`}>
             {navBar.value}
           </li>
         ))}
       </nav>
-
-	  <div>
-		<div>
-			<img src={imageAvatar} alt="" />
 		</div>
-	  </div>
+		{/* div contain cartLogo and AvatarIcon */}
+      <div className={`${styles.flexCenter} `}>
+        <img src={iconCart} alt="Cart" className="w-[35px] h-[35px] mr-[57px]" />
+        <img
+          src={imageAvatar}
+          alt="Avatar Image"
+          className="w-[68px] h-[68px]"
+        />
+      </div>
     </div>
   );
 };

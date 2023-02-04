@@ -7,7 +7,8 @@ const styles = {
     "font-kumbh font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
-  flexStart: "flex justify-centber items-start",
+  flexStart: "flex justify-center items-start",
+  // flexBaseline : "flex justify-",
 
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
