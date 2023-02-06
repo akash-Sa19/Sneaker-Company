@@ -21,15 +21,15 @@ export const nav = [
   },
 ];
 
-export const script = [
+export const script = 
   {
     id: "dis1",
     // company : "SNEAKER COMPANY"
     title: "Fall Limited Edition Sneakers",
-    discription:
+    description:
       "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. they’ll withstand everything the weather has to offer",
     price: 250,
     discountedPrice: 125,
     discount: 50,
-  },
-];
+  };
+
