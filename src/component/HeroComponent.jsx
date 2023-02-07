@@ -45,7 +45,7 @@ const HeroComponent = () => {
         </div>
       </div>
 
-      <div className="lg:w-[482px] md:w-[482px] h-full lg:mt-[196px] md:mt-[35px] sm:mt-[0px] sm:w-[343px] ">
+      <div className="lg:w-[482px] md:w-[482px] h-full lg:mt-[50px] md:mt-[35px] sm:mt-[0px] sm:w-[343px] ">
         <h1
           className={`font-bold lg:text-[28px] md:text-[28px] leading-[30px] sm:text-[18px] text-primary `}>
           SNEAKER COMPANY
