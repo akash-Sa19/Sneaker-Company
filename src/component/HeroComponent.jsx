@@ -1,14 +1,13 @@
-import React from 'react'
-import imageProduct1 from '../assets/imageProduct1.jpg'
-import imageProduct2 from '../assets/imageProduct2.jpg'
-import imageProduct3 from '../assets/imageProduct3.jpg'
-import imageProduct4 from '../assets/imageProduct4.jpg'
-import styles from '../style'
-import {script} from '../constants/index'
-import iconMinus from '../assets/iconMinus.svg'
-import iconPlus from '../assets/iconPlus.svg'
-import iconCart from '../assets/iconCart.svg'
-
+import React from "react";
+import imageProduct1 from "../assets/imageProduct1.jpg";
+import imageProduct2 from "../assets/imageProduct2.jpg";
+import imageProduct3 from "../assets/imageProduct3.jpg";
+import imageProduct4 from "../assets/imageProduct4.jpg";
+import styles from "../style";
+import { script } from "../constants/index";
+import iconMinus from "../assets/iconMinus.svg";
+import iconPlus from "../assets/iconPlus.svg";
+import iconCart from "../assets/iconCart.svg";
 
 const HeroComponent = () => {
   return (
@@ -45,7 +44,7 @@ const HeroComponent = () => {
         </div>
       </div>
 
-      <div className="lg:w-[482px] md:w-[482px] h-full lg:mt-[50px] md:mt-[35px] sm:mt-[0px] sm:w-[343px] ">
+      <div className="lg:w-[482px] md:w-[482px] h-full lg:pt-[50px] md:pt-[35px] sm:pt-[0px] sm:w-[343px] ">
         <h1
           className={`font-bold lg:text-[28px] md:text-[28px] leading-[30px] sm:text-[18px] text-primary `}>
           SNEAKER COMPANY
@@ -92,6 +91,6 @@ const HeroComponent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default HeroComponent
+export default HeroComponent;
