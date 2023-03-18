@@ -12,7 +12,7 @@ import iconCart from "../assets/iconCart.svg";
 const HeroComponent = () => {
   return (
     <div
-      className={` lg:w-[1090px] h-auto lg:mt-[110px] flex lg:flex-row justify-center items-center md:flex-col md:w-[735px] md:h-auto md:justify-center md:items-start md:flex sm:flex-col sm:w-[393px] sm:h-auto sm:justify-center sm:items-center`}>
+      className={` lg:w-[1090px] h-auto flex lg:flex-row justify-center items-center md:flex-col md:w-[735px] md:h-auto md:justify-center md:items-start md:flex sm:flex-col sm:w-[393px] sm:h-auto sm:justify-center sm:items-center absolute lg:top-[196px] md:top-[105px] sm:top-[75px]`}>
       <div className="lg:mr-[85px] lg:w-[523px] h-auto block md:w-[734px] md:h-auto md:flex justify-between md:mr-[0px] sm:w-[393px] sm:h-auto lg:flex lg:flex-col">
         <img
           src={`${imageProduct1}`}
